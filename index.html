@@ -1,0 +1,102 @@
+<html>
+  <head>
+    <title>Safe Astar zkEVM Migration</title>
+    <style>
+      body {
+				font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+				margin-top: 10%;
+				margin-bottom: 10%;
+				height: 80%;
+				max-width: 80ch;
+				margin-left: auto;
+				margin-right: auto;}
+      .hidden { display: none; }
+      button { cursor: pointer; }
+      textarea {
+        width: 80%; 
+        height: 10ch;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Safe Astar zkEVM Migration</h1>
+
+    <div>
+      <h2>Astar Portal</h2>
+      <p>
+        <a href="https://portal.astar.network/astar-zkevm/bridge/ethereum" target="_blank">Ethereum -> Astar zkEVM Bridge</a>
+      </p>
+    </div>
+
+    <div>
+      <h2>1. Connect MetaMask</h2>
+      <p>
+        <button class="mm" disabled><img width="100px" src="https://docs.metamask.io/img/metamask-logo.svg"></button>
+        <div class="account"></div>
+      </p>
+    </div>
+
+    <div class="">
+      <h2>2. Deploy Original Safe</h2>
+      <p>
+        <button class="deploy safe" disabled>Deploy</button>
+        <div class="original"></div>
+      </p>
+    </div>
+
+    <div class="">
+      <h2>3. Deploy Migration Contract</h2>
+      <p>
+        <button class="deploy migration" disabled>Deploy</button>
+        <div class="migration"></div>
+      </p>
+    </div>
+
+    <div class="">
+      <h2>4.a. Sign Transaction</h2>
+      <p>
+        <button class="sign" disabled>Sign</button>
+        <div class="data"></div>
+        <div class="hash"></div>
+        <div class="signature"></div>
+      </p>
+    </div>
+
+    <div class="">
+      <h2>5. Exec Transaction</h2>
+      <p>2/4 of</p>
+      <pre>
+      0x41c235d48BE87Fdb60169291E8b64143FDfE3Eaf
+      0x150c2891ABfE01CD2161A316192625B4A5493A4a
+      0xE01A6D0300800d53350544Bd1705E191D8faBc8e
+      0x9A173A804864fE2D0804Cc20ee32554477bE8B40
+      </pre>
+      <p>
+        <label>
+          Signatures:
+        </label>
+        <p>
+          <textarea class="signature"></textarea>
+        </p>
+        <p>
+          <textarea class="signature"></textarea>
+        </p>
+      </p>
+      <p>
+        <button class="exec" disabled>Exec</button>
+        <div class="data"></div>
+        <div class="hash"></div>
+        <div class="signatures"></div>
+      </p>
+    </div>
+
+    <script>
+      const $ = {} 
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ethers/5.7.2/ethers.umd.min.js"
+            type="application/javascript">
+    </script>
+    <script src="index.js" type="module">
+    </script>
+  </body>
+</html>
