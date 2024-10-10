@@ -1,6 +1,8 @@
 // SPDX-License-Identifier: LGPL-3.0-only
 pragma solidity <0.9.0 >=0.7.0;
 
+// Compiler: v0.8.21+commit.d9974bed, Optimization Enabled: Yes with 200 runs, EVM version: paris
+
 // contracts/interfaces/IFallbackManager.sol
 
 /**
